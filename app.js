@@ -19,7 +19,7 @@ const getAllCountryNames = async () => {
     await $('.selectpicker').selectpicker('refresh');
 }
 
-let getCountryInfo = async () => {
+let getCountryInfo = () => {
     input.forEach((item) => {
         item.addEventListener('mouseup', (e) => {
             e.preventDefault();
@@ -55,9 +55,26 @@ let getCountryInfo = async () => {
             `
 })})}
 
+
+
+
 getAllCountryNames()
 .then(() => input = document.querySelectorAll('ul > li a'))
 .then(() => getCountryInfo())
+.then(onkeydown = (e) => {
+    if (e.key === 'Enter' && e.target.tagName == 'a') {
+        e.preventDefault();
+        e.target.click();
+    }
+})
 .catch(err => {
     console.log(err);
 });
+
+
+input.forEach((item) => {
+    item.addEventListener('keypress', (e) => {
+        e == 'Enter' && (e.target.click());
+})})
+
+

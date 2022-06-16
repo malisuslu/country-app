@@ -1,0 +1,64 @@
+body {
+    background: url('https://img.freepik.com/free-vector/political-paper-map-world-gray-background_1378-1002.jpg?w=2000') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body > * {
+    margin: 5rem 0;
+}
+
+.country-select {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.country-select h5 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.card {
+    text-align: center;
+    background-color: rgb(247, 232, 166);
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card-body h5 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+div.dropdown-menu {
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+}
+
+ul.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    height: 30vh;
+    overflow-x: hidden;
+}
+
+.caret {
+    display: none;
+}
+
+.list-group-item {
+    border: 1px solid #000 !important;
+    background-color: lightblue
+}

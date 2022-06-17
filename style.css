@@ -73,6 +73,7 @@ img {
   }
 
 .card-body {
+    min-height: 440px;
     animation: fadeIn 2s ease-in-out !important;; 
     animation-fill-mode: forwards;
 }
